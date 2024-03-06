@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/df201b1b2c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <div class="cabecera-h1"><h1>GESTOR DE TAREAS</h1></div>
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </div>
+        </div>
+    </header>
+    <main class="contenedor">
+        <div class="calendario">
+            <h3>2024</h3>
+            <h3>Enero</h3>
+            <ol>
+                <li class="nombre-dia">Lun</li>
+                <li class="nombre-dia">Mar</li>
+                <li class="nombre-dia">Mer</li>
+                <li class="nombre-dia">Jue</li>
+                <li class="nombre-dia">Vie</li>
+                <li class="nombre-dia">Sab</li>
+                <li class="domingo">Dom</li>
+                <a href=""><li>1</li></a>
+                <a href=""><li>2</li></a>
+                <a href=""><li>3</li></a>
+                <a href=""><li>4</li></a>
+                <a href=""><li>5</li></a>
+                <a href=""><li>6</li></a>
+                <li class="red">7</li>
+                <a href=""><li>8</li></a>
+                <a href=""><li>9</li></a>
+                <a href=""><li>10</li></a>
+                <a href=""><li>11</li></a>
+                <a href=""><li>12</li></a>
+                <a href=""><li>13</li></a>
+                <li class="red">14</li>
+                <a href=""><li>15</li></a>
+                <a href=""><li>16</li></a>
+                <a href=""><li>17</li></a>
+                <a href=""><li>18</li></a>
+                <a href=""><li>19</li></a>
+                <a href=""><li>20</li></a>
+                <li class="red">21</li>
+                <a href=""><li>22</li></a>
+                <a href=""><li>23</li></a>
+                <a href=""><li>24</li></a>
+                <a href=""><li>25</li></a>
+                <a href=""><li>26</li></a>
+                <a href=""><li>27</li></a>
+                <li class="red">28</li>
+                <a href=""><li>29</li></a>
+                <a href=""><li>30</li></a>
+                <a href=""><li>31</li></a>
+            </ol>
+        </div>
+
+        <div class="proximatarea">
+            <h2>Tarea</h2>
+            <h3>Lunes 15 de Enero</h3>
+            <p class="par-proximatarea">Despliegue de aplicaciones</p>
+            <p>Aquí sale una breve descripción de la tarea del día que se selecciona en el calendario de arriba.</p>
+            <div></div>
+        </div>
+
+        <div class="insertar-tarea">
+            <h2>Insertar tarea</h2>
+
+            <form action="#" method="post">
+                <label for="asignatura">Asignatura:</label>
+                <select id="asignatura" name="asignatura">
+                    <option value="matematicas">Diseño</option>
+                    <option value="historia">Empresa</option>
+                    <option value="ciencias">Despliegue</option>
+                    <option value="literatura">Cliente</option>
+                    <option value="ingles">Servidor</option>
+                </select>
+
+                <br>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha">
+
+                
+            </form>
+            <label for="comentario"></label>
+                <textarea id="comentario" name="comentario" rows="4" cols="30" placeholder="Descripción tarea"></textarea>
+
+                <br>
+
+                <input type="submit" value="Enviar">
+
+        </div>
+
+        <a href="paginas/diseno.html">
+        <div class="design">
+            <i class="fa-regular fa-pen-to-square"></i>
+            <h2>Diseño de interfaces Web</h2>
+        </div>
+        </a>
+        
+        <a class="despliegue" href="paginas/despliegue.html">
+            <div class="despliegue">
+                <i class="fa-regular fa-object-ungroup"></i>
+                <h2>Despliegue de aplicaciones</h2>
+            </div>
+            </a>
+
+
+        <a class="empresa" href="paginas/empresa.html">
+        <div class="empresa">
+            <i class="fa-regular fa-handshake"></i>
+            <h2>Empresa</h2>
+        </div>
+        </a>
+
+
+        <a class="cliente" href="paginas/cliente.html">
+        <div class="cliente">
+            <i class="fa-regular fa-address-card"></i>
+            <h2>Desarrollo entorno cliente</h2>
+        </div>
+        </a>
+
+
+        <a href="paginas/servidor.html">
+            <div class="servidor">
+                <i class="fa-regular fa-hard-drive"></i>
+                <h2>Desarrollo entorno servidor</h2>
+            </div>
+            </a>
+    </main>
+    <footer>Francesco Latorrata | 2º DAW</footer>
+    
+</body>
+</html>
