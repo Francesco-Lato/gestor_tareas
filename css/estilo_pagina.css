@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    color: rgb(23, 152, 221);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    text-align: center;
+    padding-top: 2em;
+    *margin: 10px;
+    *margin: 0 auto;
+}
+
+nav ul li{
+    *display: inline-block;
+    background-color: rgb(23, 152, 221);
+    padding: 10px;
+    width: 50%;
+    margin: 5px auto;
+    list-style: none;
+    border-radius: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0 50px;
+}
+
+nav li:hover, nav a:hover {
+    background-color: rgb(242, 222, 70);
+    color: black;
+}
+
+.submenu {
+    display:none;
+}
+
+.submenu:hover {
+    display: block ;
+}
+
+/* MAIN */
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.tarea {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: bisque;
+    margin: 2em;
+}
+
+
+
+.cabecera-tarea {
+    background-color: rgb(207, 199, 198);
+    padding: 10px;
+}
+
+.cabecera-iconos{
+    text-align: center;
+    margin-right: 20;
+}
+
+.cabecera-titulo {
+    text-align: center;
+    padding: 10px;
+    color: rgb(84, 82, 82);
+}
+
+.cabecera-iconos i{
+    color: rgb(84, 82, 82);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.cabecera-iconos i:hover {
+    *transform: scale(1.6); /* Agranda el ícono al 110% cuando el ratón se acerca */
+    *transform: rotate(360deg);
+    transform: scale(1.6) rotate(360deg);
+}
+
+.descr-tarea {
+    padding: 20px;
+    background-color: rgb(251, 248, 231);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    margin: 10px 8px;
+}
+
+.fecha-tarea {
+    *margin:10px;
+    *box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.fecha-tarea h3 {
+    background-color:rgb(23, 152, 221);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dia {
+    font-weight: bold;
+    text-align: center;
+    font-size: 7rem;
+    color: rgb(84, 82, 82);
+}
+
+.mes {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(84, 82, 82);
+}
+
+.contenido-tarea{
+    display: block;
+}
+
+.botones-tareas{
+    text-align: right;
+    padding: 10px;
+}
+
+.botones-tareas label{
+    display: block;
+    margin: 10px;
+}
+
+
+
+.label-uno {
+    background-color: tomato;
+    padding: 8px;
+    color: white;
+    width: 40%;
+}
+
+.label-dos {
+    background-color: rgb(242, 222, 70);
+    padding: 8px;
+    color: gris;
+    width: 60%;
+}
+
+.label-tres {
+    background-color: rgb(69, 188, 58);
+    padding: 8px;
+    color: white;
+}
+
+.botones-tareas i {
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    color: rgb(254, 196, 21);
+}
+
+.botones-tareas label{
+    position: relative;
+    *padding: 5px 15px 5px 51px;
+}
+
+.carpeta {
+    text-decoration: none;
+}
+
+.carpeta i {
+    text-align: right;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.fondo {
+    width: 100%;
+    height: 5rem;
+    position: relative;
+    *object-fit:contain;
+    background: rgb(231,178,16);
+    background: linear-gradient(90deg, rgba(231,178,16,1) 0%, rgba(255,253,250,1) 74%, rgba(255,250,244,1) 100%); 
+}
+
+.fondo i{
+    position: absolute;
+    margin:0;
+    top: 1rem;
+    right: 1rem;
+    color: rgb(239, 185, 36);
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(178, 178, 180);
+    text-align: center;
+    color: white;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    main {
+        width: 90%;
+    }
+
+    .contenedor-tareas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em
+    }
+
+
+    .cabecera-tarea{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contenido-tarea {
+        display: flex;
+    }
+
+    nav {
+        padding-top:3em ;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+
+    .tarea {
+        margin: 3em 0 0 0;
+    }
+
+    .botones-tareas {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row nowrap;
+    }
+
+    .cabecera-iconos {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row nowrap;
+    }
+
+    .botones-tareas label{
+        flex: 1 0 auto;
+        margin: 3px;
+    }
+
+    .label-uno {
+        width: 30%;
+    }
+
+    .label-dos {
+        width: 60%;
+    }
+
+    .botones-tareas{
+        display: block;
+    }
+   
+}
+
+
